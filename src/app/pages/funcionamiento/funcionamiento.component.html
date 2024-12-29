@@ -1,0 +1,60 @@
+<div class="content">
+    <h2>Funcionamiento</h2>
+    <p>
+      Angular actúa sobre estructuras modulares como páginas, secciones y elementos del DOM, gestionados a través de componentes y módulos. Los ficheros del framework se modifican siguiendo una estructura organizada y utilizando herramientas como Angular CLI y editores compatibles. Además, Angular puede interactuar con recursos externos y aplicaciones mediante APIs, librerías o componentes reutilizables, extendiendo su alcance más allá del entorno inmediato.
+    </p>
+  
+    <h3>1) ¿Actúa sobre páginas, ficheros, secciones…?</h3>
+    <ul>
+      <li><strong>1.1) Single Page Applications (SPA):</strong>
+        <p>
+          Angular está diseñado principalmente para aplicaciones de una sola página, en las que el contenido se actualiza dinámicamente sin recargar toda la página. Esto se logra mediante un sistema de enrutamiento que controla la visualización de diferentes vistas desde un solo archivo HTML base (<code>index.html</code>).
+        </p>
+      </li>
+      <li><strong>1.2) Estructura Modular:</strong>
+        <ul>
+          <li><strong>1.2.1) Módulos:</strong>
+            Angular organiza la funcionalidad en módulos (&#64;NgModule), que agrupan componentes, servicios y directivas relacionados.
+          </li>
+          <li><strong>1.2.2) Componentes:</strong>
+            Cada componente es responsable de una sección específica de la interfaz de usuario (UI). Actúan sobre vistas definidas en plantillas HTML (<code>component.html</code>) y están vinculados a archivos de estilos (<code>component.css</code>) y lógica (<code>component.ts</code>).
+          </li>
+        </ul>
+      </li>
+      <li><strong>1.3) DOM (Document Object Model):</strong>
+        Angular interactúa directamente con el DOM mediante sus directivas (<code>*ngIf</code>, <code>*ngFor</code>, etc.) para manipular elementos visuales de manera declarativa, basada en datos dinámicos.
+      </li>
+      <li><strong>1.4) Ficheros de Configuración:</strong>
+        Angular utiliza archivos como <code>angular.json</code>, <code>tsconfig.json</code>, y <code>package.json</code> para configurar aspectos técnicos como la compilación, el uso de TypeScript y las dependencias del proyecto.
+      </li>
+    </ul>
+  
+    <h3>2) ¿Cómo se editan/modifican los ficheros que actúan en el framework?</h3>
+    <ul>
+      <li><strong>2.1) Componentes:</strong>
+        <ul>
+          <li>Cada componente incluye tres archivos principales: HTML, CSS/SCSS y TypeScript.</li>
+          <li>Para cambiar la lógica, se edita el archivo <code>.ts</code>, añadiendo métodos, propiedades o importando dependencias necesarias.</li>
+          <li>La vista se ajusta editando el archivo <code>.html</code> con elementos HTML estándar y directivas de Angular.</li>
+          <li>Los estilos se personalizan en el archivo <code>.css</code> o <code>.scss</code>.</li>
+        </ul>
+      </li>
+      <li><strong>2.2) Módulos:</strong>
+        Los módulos (<code>module.ts</code>) gestionan la inclusión de componentes, servicios y otras funcionalidades.
+      </li>
+      <li><strong>2.3) Directivas y Servicios:</strong>
+        <ul>
+          <li><strong>Directivas:</strong> Modifican elementos del DOM. Se configuran en <code>&#64;NgModule</code> y se usan directamente en las plantillas HTML.</li>
+          <li><strong>Servicios:</strong> Contienen lógica compartida y se inyectan en los componentes donde son necesarios.</li>
+        </ul>
+      </li>
+      <li><strong>2.4) Configuración:</strong>
+        Archivos clave como <code>angular.json</code> o <code>tsconfig.json</code> permiten ajustar configuraciones globales.
+      </li>
+    </ul>
+  
+    <div class="image-container">
+      <img src="assets/images/logos2.jpg" alt="Logos de Angular, Node y NPM">
+    </div>
+  </div>
+  

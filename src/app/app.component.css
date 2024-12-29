@@ -1,0 +1,79 @@
+.sidebar {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: auto;
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #ea00da;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'sidebar content'
+      'footer footer';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo del enlace de GitHub */
+.github-link {
+    color: #1a1a1a; /* Gris antracita oscuro */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem; /* Más espacio alrededor del texto */
+    border: 2px solid #1a1a1a; /* Borde gris oscuro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el marco */
+}
+
+.github-link:hover {
+    color: #ffffff; /* Blanco al pasar el mouse */
+    background: #1a1a1a; /* Fondo gris antracita oscuro al resaltar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #c2b0b0;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+

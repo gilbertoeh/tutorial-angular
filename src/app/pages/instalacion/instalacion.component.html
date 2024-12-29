@@ -1,0 +1,56 @@
+<div class="content">
+    <h2>Instalación</h2>
+    <p>
+      La instalación de Angular implica preparar un entorno de desarrollo adecuado para garantizar un rendimiento óptimo y una configuración coherente.
+    </p>
+  
+    <h3>1) ¿Se precisa instalación?</h3>
+    <p>
+      Sí, Angular requiere una instalación previa de herramientas clave para su correcto funcionamiento. Aunque en realidad no necesita una instalación directa, ya que es accesible a través del CLI (Command Line Interface), el entorno de desarrollo debe configurarse con ciertos componentes:
+    </p>
+    <ul>
+      <li><strong>Node.js y npm:</strong> Angular utiliza Node.js como entorno de ejecución para gestionar dependencias y ejecutar scripts durante el desarrollo.</li>
+      <li><strong>Angular CLI:</strong> Una herramienta que simplifica la creación, configuración y mantenimiento de proyectos Angular.</li>
+      <li><strong>Editor de código (opcional):</strong> Un IDE como Visual Studio Code mejora significativamente la productividad.</li>
+    </ul>
+  
+    <h3>2) ¿Qué pasos hay que realizar para realizar la instalación?</h3>
+    <ul>
+      <li><strong>2.1) Instalar Node.js:</strong> Descarga e instala la versión LTS desde <a href="https://nodejs.org" target="_blank">www.nodejs.org</a>.</li>
+      <li>
+        <strong>2.2) Verificar la instalación:</strong> Comprueba que Node.js y npm estén correctamente instalados ejecutando los comandos:
+        <ul>
+          <li><code>node -v</code> # Muestra la versión de Node.js</li>
+          <li><code>npm -v</code> # Muestra la versión de npm</li>
+        </ul>
+      </li>
+      <li><strong>2.3) Instalar Angular CLI:</strong> Ejecuta el comando: <code>npm install -g &#64;angular&#47;cli&#64;latest</code>.</li>
+      <li><strong>2.4) Verificar instalación:</strong> Usa el comando <code>ng version</code> para confirmar.</li>
+      <li>
+        <strong>2.5) Crear un nuevo proyecto:</strong> Usa el comando <code>ng new nombre-del-proyecto</code>. Se te solicitarán configuraciones iniciales.
+      </li>
+    </ul>
+  
+    <h3>3) ¿Versiones necesarias?</h3>
+    <ul>
+      <li><strong>Node.js:</strong> Al menos v16.x o superior. Verifica compatibilidad en la <a href="https://angular.dev/" target="_blank">documentación oficial</a>.</li>
+      <li><strong>npm:</strong> Las versiones recientes (v8 o superior) son compatibles.</li>
+      <li><strong>Angular CLI:</strong> Usa la última versión con <code>npm install -g &#64;angular&#47;cli&#64;latest</code>.</li>
+      <li>
+        <strong>Framework Angular:</strong> El CLI instalará la última versión automáticamente o una específica con <code>ng new nombre-del-proyecto --version=15.2.0</code>.
+      </li>
+    </ul>
+  
+    <h3>4) ¿Rutas para tener en cuenta?</h3>
+    <ul>
+      <li><strong>Directorio global del CLI:</strong> 
+        <ul>
+          <li>Windows: <code>C:\Users\&lt;usuario&gt;\AppData\Roaming\npm</code></li>
+          <li>Mac/Linux: <code>/usr/local/lib/node_modules</code></li>
+        </ul>
+      </li>
+      <li><strong>Directorio del proyecto:</strong> Trabaja desde la carpeta del proyecto para ejecutar comandos <code>ng</code>.</li>
+      <li>
+        <strong>Ruta al binario ng:</strong> Si el comando <code>ng</code> no se reconoce, verifica que la carpeta esté incluida en el PATH del sistema.
+      </li>
+    </ul>

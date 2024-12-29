@@ -1,0 +1,64 @@
+<div class="content">
+  <h2>Primeros Pasos</h2>
+  <p>
+    El siguiente ejercicio proporciona una introducción a Angular. Te mostrará cómo los componentes interactúan dentro de la arquitectura del framework. 
+    Aunque simple, este "Hola Mundo" sienta las bases para comprender conceptos más avanzados como inyección de dependencias, directivas y servicios, 
+    esenciales para el desarrollo de aplicaciones robustas.
+  </p>
+
+  <h3>1) Estructura inicial de Angular</h3>
+  <p>
+    Cuando creas un proyecto Angular con el comando <code>ng new</code>, se genera una estructura estándar que incluye:
+  </p>
+  <ul>
+    <li>
+      <strong>Módulos</strong> (<code>app.module.ts</code>), que define los componentes, servicios y dependencias que forman parte de la aplicación.
+    </li>
+    <li>
+      <strong>Componentes</strong> (<code>app.component.*</code>), que manejan la lógica y el diseño de cada parte de la interfaz de usuario.
+    </li>
+    <li>
+      <strong>Archivos de configuración</strong> (<code>angular.json</code>, <code>package.json</code>), que controlan las dependencias y configuraciones del proyecto.
+    </li>
+    <li>
+      <strong>Sistema de enrutamiento</strong> (opcional), que permite navegar entre vistas si habilitado durante la creación del proyecto.
+    </li>
+  </ul>
+
+  <div class="image-container">
+    <img src="assets/images/hello-world.gif" alt="Hello World Animation" />
+  </div>
+
+  <h3>2) Creación del proyecto Angular</h3>
+  <p>
+    <strong>2.1)</strong> Para crear un nuevo proyecto Angular, ejecuta el siguiente comando:
+  </p>
+  <pre><code>ng new hola-mundo-app</code></pre>
+  <p>
+    Nota: Durante la ejecución, se te pedirá confirmar opciones como:
+  </p>
+  <ul>
+    <li><strong>Routing:</strong> Puedes elegir "No" para este ejemplo simple.</li>
+    <li><strong>Estilos:</strong> Selecciona <code>CSS</code> como lenguaje para los estilos.</li>
+  </ul>
+
+  <p>
+    <strong>2.2)</strong> Accede al proyecto navegando al directorio generado:
+  </p>
+  <pre><code>cd hola-mundo-app</code></pre>
+
+  <h3>3) Creación del componente "Hola Mundo"</h3>
+  <p>
+    <strong>3.1)</strong> Genera un componente personalizado usando Angular CLI:
+  </p>
+  <pre><code>ng generate component hola-mundo</code></pre>
+  <p>
+    Este comando genera automáticamente cuatro archivos en la carpeta <code>src/app/hola-mundo/</code>:
+  </p>
+  <ul>
+    <li><code>hola-mundo.component.ts:</code> Contiene la lógica del componente.</li>
+    <li><code>hola-mundo.component.html:</code> Define la vista (plantilla).</li>
+    <li><code>hola-mundo.component.css:</code> Aplica estilos específicos al componente.</li>
+    <li><code>hola-mundo.component.spec.ts:</code> Archivos de pruebas unitarias para el componente.</li>
+  </ul>
+</div>
